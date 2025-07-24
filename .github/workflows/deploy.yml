@@ -1,4 +1,4 @@
-name: Deploy Personal Site to S3 + CloudFront
+name: Deploy huipengjohnyao.com Personal Site to S3 + CloudFront
 
 on:
     push:
