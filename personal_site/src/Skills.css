@@ -1,0 +1,45 @@
+.skill-icons-panel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    justify-items: center;
+    align-items: center;
+    background: none;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+  
+  .skill-icon-card {
+    background: #FFD100;
+    border-radius: 8px;
+    box-shadow: 4px 6px 0px 0px #bba212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    transition: transform 0.1s;
+  }
+  
+  .skill-icon-card:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 8px 12px 0px 0px #054d5a;
+  }
+  
+  .skill-icon-svg {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-icon-label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }

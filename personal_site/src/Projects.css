@@ -1,0 +1,23 @@
+.projects-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Vertically center content */
+    justify-content: space-between;
+    background: #2874AE;
+    color: #fff;
+    padding: 60px 80px;
+    min-height: 100px;
+    min-width: 100vw;
+    box-sizing: border-box;
+}
+
+.projects{
+    background: #2874AE;
+    min-height: 100vh;
+    min-width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

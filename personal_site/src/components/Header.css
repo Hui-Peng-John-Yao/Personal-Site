@@ -1,0 +1,61 @@
+.custom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2874AE;
+    padding: 0 40px;
+    height: 60px;
+    color: #fff;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .site-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  
+  .header-nav {
+    display: flex;
+    margin-left: auto;
+    gap: 24px;
+  }
+  
+  .header-nav a {
+    font-weight: 700;           /* Always bold */
+    color: #fff;             /* Less prominent color */
+    transition: color 0.2s;
+    text-decoration: none;
+  }
+  
+  .header-nav a.active,
+  .header-nav a:hover {
+    color: #fff;                /* More prominent color on hover */
+  }
+  
+  .contact {
+    background: #FFD100;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .contact:hover {
+    background: #bd9b07;
+  }
