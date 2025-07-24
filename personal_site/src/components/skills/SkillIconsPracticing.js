@@ -5,6 +5,7 @@ import googleLogo from '../../assets/google_api.png';
 import alexaLogo from '../../assets/alexa.png';
 import lambdaLogo from '../../assets/Lambda.png';
 import DynamoDBLogo from '../../assets/DynamoDB.png';
+import S3Logo from '../../assets/S3.png';
 
 const skills = [
   {
@@ -29,6 +30,12 @@ const skills = [
     name: 'DynamoDB',
     svg: (
       <img src={DynamoDBLogo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
+    ),
+  },
+  {
+    name: 'S3',
+    svg: (
+      <img src={S3Logo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
 ];
