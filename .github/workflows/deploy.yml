@@ -20,6 +20,7 @@ jobs:
   
         - name: Install dependencies
           run: npm install
+          working-directory: personal_site
   
         - name: Build React app
           run: npm run build
