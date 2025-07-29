@@ -1,4 +1,4 @@
-name: Deploy Personal Site to S3 + CloudFront
+name: Deploy huipengjohnyao.com Personal Site to S3 + CloudFront
 
 on:
     push:
@@ -20,12 +20,14 @@ jobs:
   
         - name: Install dependencies
           run: npm install
+          working-directory: personal_site
   
         - name: Build React app
           run: npm run build
+          working-directory: personal_site
   
         - name: Sync to S3
-          run: aws s3 sync build/ s3://$BUCKET_NAME --delete
+          run: aws s3 sync personal_site/build/ s3://${{ secrets.BUCKET_NAME }} --delete
           env:
             AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
