@@ -28,8 +28,8 @@ function Contact() {
     try {
       // You'll need to replace these with your actual EmailJS credentials
       const result = await emailjs.send(
-        'YOUR_SERVICE_ID', // EmailJS service ID
-        'YOUR_TEMPLATE_ID', // EmailJS template ID
+        'service_r1nuqgd', // EmailJS service ID
+        'template_gtovkzk', // EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -37,7 +37,7 @@ function Contact() {
           message: formData.message,
           to_name: 'John Yao', // Your name
         },
-        'YOUR_PUBLIC_KEY' // EmailJS public key
+        'nmDLRBjDn3pHh7i6k' // EmailJS public key
       );
 
       console.log('Email sent successfully:', result);
