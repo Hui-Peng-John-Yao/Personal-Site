@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 import Header from './components/Header.js';
 
@@ -9,6 +10,8 @@ function Contact() {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
 
   const handleChange = (e) => {
     setFormData({
@@ -17,19 +20,41 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can add email functionality or form submission logic
-    console.log('Form submitted:', formData);
-    // For now, just show an alert
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // You'll need to replace these with your actual EmailJS credentials
+      const result = await emailjs.send(
+        'YOUR_SERVICE_ID', // EmailJS service ID
+        'YOUR_TEMPLATE_ID', // EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_name: 'John Yao', // Your name
+        },
+        'YOUR_PUBLIC_KEY' // EmailJS public key
+      );
+
+      console.log('Email sent successfully:', result);
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div>
       <Header />
-      <div className="contact">
+      <div className="contact-page">
         <div className="contact-description">
           <h1>Get In Touch</h1>
           <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
@@ -74,6 +99,19 @@ function Contact() {
 
           <div className="contact-form">
             <h2>Send Me a Message</h2>
+            
+            {submitStatus === 'success' && (
+              <div className="success-message">
+                Thank you for your message! I'll get back to you soon.
+              </div>
+            )}
+            
+            {submitStatus === 'error' && (
+              <div className="error-message">
+                Sorry, there was an error sending your message. Please try again.
+              </div>
+            )}
+            
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name *</label>
@@ -84,6 +122,7 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               
@@ -96,6 +135,7 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               
@@ -107,6 +147,7 @@ function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                 />
               </div>
               
@@ -119,11 +160,16 @@ function Contact() {
                   onChange={handleChange}
                   rows="5"
                   required
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
               
-              <button type="submit" className="submit-btn">
-                Send Message
+              <button 
+                type="submit" 
+                className="submit-btn"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
