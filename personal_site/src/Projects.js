@@ -5,6 +5,8 @@ import ProjectSection from './ProjectSection.js';
 import ProjectsDescription from './ProjectsDescription.js';
 import Header from './components/Header.js';
 import alexaImage from './assets/alexa.jpg';
+import arcaneChessImage from './assets/Arcane_Chess.png';
+import researchImage from './assets/Research_Image.png';
 
 const projects = [
   {
@@ -16,10 +18,18 @@ const projects = [
     external: 'https://example.com/'
   },
   {
-    image: 'https://via.placeholder.com/600x400?text=Project+2',
-    title: 'Another Project',
-    description: 'A description for another project goes here.',
-    tech: ['React', 'CSS'],
+    image: arcaneChessImage,
+    title: 'Arcane Chess',
+    description: 'A game developed in GoDot that combines the classic gameplay of chess with a card and mana system.',
+    tech: ['GoDot'],
+    github: '',
+    external: ''
+  },
+  {
+    image: researchImage,
+    title: 'Published Research',
+    description: 'A paper titled "The Role of Game-Playing and Coping Styles in Mitigating Stress Among Students" published in The Whitman Journal of Psychology. I used Centiment for data collection and R for data analysis.',
+    tech: ['Centiment', 'R'],
     github: '',
     external: ''
   }

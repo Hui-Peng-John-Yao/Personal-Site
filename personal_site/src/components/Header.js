@@ -4,6 +4,7 @@ import profilePic from '../assets/John_Color.png';
 import Nav from './Nav';
 
 function Header() {
+
   return (
     <header className="custom-header">
       <div className="header-left">
@@ -11,7 +12,6 @@ function Header() {
         <span className="site-name">John Yao</span>
       </div>
       <Nav />
-      <button className="contact">CONTACT</button>
     </header>
   );
 }
