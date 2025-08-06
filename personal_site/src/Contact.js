@@ -67,14 +67,14 @@ function Contact() {
               <span className="contact-icon">📧</span>
               <div>
                 <h3>Email</h3>
-                <p>john.yao@example.com</p>
+                <p>huipengjohnyao@gmail.com</p>
               </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📍</span>
               <div>
                 <h3>Location</h3>
-                <p>Seattle, WA</p>
+                <p>Ladera Ranch, CA</p>
               </div>
             </div>
             <div className="contact-item">
@@ -82,7 +82,7 @@ function Contact() {
               <div>
                 <h3>LinkedIn</h3>
                 <a href="https://linkedin.com/in/john-yao" target="_blank" rel="noopener noreferrer">
-                  linkedin.com/in/john-yao
+                   https://www.linkedin.com/in/hui-peng-john-yao-2298b2376/
                 </a>
               </div>
             </div>
@@ -90,8 +90,8 @@ function Contact() {
               <span className="contact-icon">🐙</span>
               <div>
                 <h3>GitHub</h3>
-                <a href="https://github.com/john-yao" target="_blank" rel="noopener noreferrer">
-                  github.com/john-yao
+                <a href="https://github.com/hui-peng-john-yao" target="_blank" rel="noopener noreferrer">
+                https://github.com/hui-peng-john-yao
                 </a>
               </div>
             </div>

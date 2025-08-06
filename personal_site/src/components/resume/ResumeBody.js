@@ -6,7 +6,7 @@ import ResumeViewer from './ResumeViewer';
 function ResumeBody() {
   return (
     <section className="hero-section">
-      <ResumeDescription />
+      <ResumeDescription/>
       <ResumeViewer />
     </section>
   );
