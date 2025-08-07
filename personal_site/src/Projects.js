@@ -7,15 +7,17 @@ import Header from './components/Header.js';
 import alexaImage from './assets/alexa.jpg';
 import arcaneChessImage from './assets/Arcane_Chess.png';
 import researchImage from './assets/Research_Image.png';
+import uniboundImage from './assets/unibound.png';
+import siteImage from './assets/site.png';
 
 const projects = [
   {
     image: alexaImage,
     title: 'Alexa Journal Reader',
     description: 'I journal my to-do list, and I ask Alexa to read it back to me the next day when I wake up.',
-    tech: ['React', 'Tailwind'],
-    github: 'https://github.com/',
-    external: 'https://example.com/'
+    tech: ['AWS', 'ASK'],
+    github: 'https://github.com/Hui-Peng-John-Yao/Alexa-Journal-Reader/',
+    external: ''
   },
   {
     image: arcaneChessImage,
@@ -31,6 +33,22 @@ const projects = [
     description: 'A paper titled "The Role of Game-Playing and Coping Styles in Mitigating Stress Among Students" published in The Whitman Journal of Psychology. I used Centiment for data collection and R for data analysis.',
     tech: ['Centiment', 'R'],
     github: '',
+    external: 'https://www.wwjop.org/post/the-role-of-game-playing-and-coping-styles-in-mitigating-stress-among-students'
+  },
+  {
+    image: uniboundImage,
+    title: 'Unibound Consulting',
+    description: 'I am a web developer and consultant for Unibound Consulting, a startup that provides consulting services to colege applicants.',
+    tech: ['React', 'Tailwind'],
+    github: 'https://github.com/Leahie/consulting',
+    external: 'https://unibound.org'
+  },
+  {
+    image: siteImage,
+    title: 'This Site!',
+    description: 'This siteis hosted with AWS S3 and CloudFront using industry standard practices and built with React, Tailwind, and Express.',
+    tech: ['AWS', 'React', 'Tailwind'],
+    github: 'https://github.com/Hui-Peng-John-Yao/Personal-Site',
     external: ''
   }
 ];
