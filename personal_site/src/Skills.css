@@ -43,3 +43,52 @@
     margin-top: 8px;
     letter-spacing: 1px;
   }
+
+  /* Mobile responsive styles for skills */
+  @media (max-width: 768px) {
+    .skill-icons-panel {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 20px;
+      padding: 20px 0;
+    }
+    
+    .skill-icon-card {
+      width: 140px;
+      height: 140px;
+    }
+    
+    .skill-icon-svg svg,
+    .skill-icon-svg img {
+      width: 60px !important;
+      height: 60px !important;
+    }
+    
+    .skill-icon-label {
+      font-size: 1.1rem;
+      margin-top: 6px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .skill-icons-panel {
+      gap: 16px;
+      padding: 16px 0;
+    }
+    
+    .skill-icon-card {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .skill-icon-svg svg,
+    .skill-icon-svg img {
+      width: 50px !important;
+      height: 50px !important;
+    }
+    
+    .skill-icon-label {
+      font-size: 1rem;
+      margin-top: 4px;
+    }
+  }

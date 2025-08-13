@@ -47,7 +47,7 @@
   }
   
   .profile-img {
-    width: 600px;
+    width: 700px;
     height: auto;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     background-color: #FFD100;
@@ -90,5 +90,158 @@
     margin-top: 32px;
     text-align: left;
     display: block;
+  }
+
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+      gap: 40px;
+    }
+    
+    .hero-section-vertical {
+      padding: 40px 20px;
+    }
+    
+    .hero-left {
+      text-align: center;
+      order: 1;
+    }
+    
+    .hero-right {
+      order: 2;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+    }
+    
+    .description {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    
+    .profile-img {
+      width: 350px;
+      max-width: 100%;
+    }
+    
+    .profile-img-container {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 30px 15px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .description {
+      font-size: 0.9rem;
+    }
+    
+    .profile-img {
+      width: 300px;
+    }
+  }
+
+  /* Resume page specific responsive styles */
+  .resume-viewer-container {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .resume-iframe {
+    width: 100%;
+    height: 600px;
+    max-width: 800px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  .resume-description {
+    flex: 1;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Mobile responsive styles for resume */
+  @media (max-width: 768px) {
+    .resume-viewer-container {
+      padding: 10px;
+      min-height: 400px;
+    }
+    
+    .resume-iframe {
+      height: 500px;
+      max-width: 100%;
+    }
+    
+    .resume-description {
+      padding-right: 0;
+      padding-bottom: 20px;
+      text-align: center;
+      order: 1;
+    }
+    
+    .resume-viewer-container {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .resume-viewer-container {
+      padding: 5px;
+      min-height: 350px;
+    }
+    
+    .resume-iframe {
+      height: 400px;
+    }
+    
+    .resume-description {
+      padding-bottom: 15px;
+    }
+  }
+
+  /* Skills page mobile responsive styles */
+  @media (max-width: 768px) {
+    .hero-section-vertical {
+      padding: 40px 20px;
+      gap: 30px;
+    }
+    
+    .title {
+      font-size: 1.8rem;
+      margin: 20px 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section-vertical {
+      padding: 30px 15px;
+      gap: 25px;
+    }
+    
+    .title {
+      font-size: 1.6rem;
+      margin: 15px 0;
+    }
   }
 

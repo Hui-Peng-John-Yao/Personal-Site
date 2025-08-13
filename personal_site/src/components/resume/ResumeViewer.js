@@ -3,15 +3,13 @@ import '../../Hero.css';
 
 function ResumeViewer() {
   return (
-    <div className="hero-right" >
+    <div className="hero-right resume-viewer-container">
       <iframe
         src="/John_Yao_Resume.pdf#zoom=100%"
         style={{ border: "none" }} 
         title="My PDF Document"
-        width="100%"
-        height="700px"
+        className="resume-iframe"
       />
-      
     </div>
   );
 }

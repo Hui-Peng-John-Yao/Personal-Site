@@ -3,7 +3,7 @@ import '../../Hero.css';
 
 function ResumeDescription() {
     return (
-        <div className="hero-left hidden lg:block">
+        <div className="hero-left resume-description">
             <h1>
                 My <span className="highlight">Resume</span><br />
             </h1>
