@@ -7,9 +7,6 @@ function SkillsDescription() {
             <h1>
                 My <span className="highlight">Skills</span><br />
             </h1>
-            <p className="description-centered">
-                Stay hungry, stay foolish.
-            </p>
         </div>
     );
 }

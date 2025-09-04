@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
+import './Hero.css';
 import Header from './components/Header.js';
 
 function Contact() {
@@ -55,10 +56,10 @@ function Contact() {
     <div>
       <Header />
       <div className="contact-page">
-        <div className="contact-description">
-          <h1>Get In Touch</h1>
-          <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
-        </div>
+          <h1 style={{color:'white'}}>
+                Get In <span className="highlight">Touch</span>
+          </h1>
+          <p style={{color:'white', fontFamily: 'DM Sans'}}>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
         
         <div className="contact-content">
           <div className="contact-info">
