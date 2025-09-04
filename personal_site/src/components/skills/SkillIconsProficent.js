@@ -3,7 +3,7 @@ import '../../Hero.css';
 import '../../Skills.css';
 import godotLogo from '../../assets/godot_logo.png';
 import rLogo from '../../assets/r_logo.png';
-import cppLogo from '../../assets/c++logo.svg';
+import cppLogo from '../../assets/cpp-logo.svg';
 
 const skills = [
   {

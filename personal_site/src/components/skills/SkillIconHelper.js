@@ -12,7 +12,7 @@ import S3Logo from '../../assets/S3.png';
 import googleLogo from '../../assets/google_api.png';
 import alexaLogo from '../../assets/alexa.png';
 import gitLogo from '../../assets/Giticon.svg.png';
-import cppLogo from '../../assets/c++logo.svg';
+import cppLogo from '../../assets/cpp-logo.svg';
 
 // Map of tech names to their corresponding skill icons
 const skillIconMap = {
