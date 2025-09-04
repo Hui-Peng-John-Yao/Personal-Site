@@ -13,17 +13,33 @@ import siteImage from './assets/site.png';
 const projects = [
   {
     image: alexaImage,
-    title: 'Alexa Journal Reader',
+    title: 'Alexa-Powered Voice Journal Assistant',
     description: 'I journal my to-do list, and I ask Alexa to read it back to me the next day when I wake up.',
-    tech: ['AWS', 'ASK'],
+    tech: ['Python', 'AWS Lambda', 'Google Drive API', 'DynamoDB', 'Alexa Skills Kit', 'IAM'],
     github: 'https://github.com/Hui-Peng-John-Yao/Alexa-Journal-Reader/',
     external: ''
+  },
+  {
+    image: siteImage,
+    title: 'Personal Website',
+    description: 'This site is hosted with AWS S3 and CloudFront using industry standard practices and built with React, Tailwind, and Express.',
+    tech: ['Git', 'React', 'AWS S3', 'Cloudfront', 'Route 53'],
+    github: 'https://github.com/Hui-Peng-John-Yao/Personal-Site',
+    external: 'https://huipengjohnyao.com'
+  },
+  {
+    image: uniboundImage,
+    title: 'Unibound Consulting',
+    description: 'I am a web developer and consultant for Unibound Consulting, a startup that provides consulting services to college applicants.',
+    tech: ['React', 'Tailwind', 'Node.js'],
+    github: 'https://github.com/Leahie/consulting',
+    external: 'https://unibound.org'
   },
   {
     image: arcaneChessImage,
     title: 'Arcane Chess',
     description: 'A game developed in GoDot that combines the classic gameplay of chess with a card and mana system.',
-    tech: ['GoDot'],
+    tech: ['Godot'],
     github: '',
     external: ''
   },
@@ -31,25 +47,9 @@ const projects = [
     image: researchImage,
     title: 'Published Research',
     description: 'A paper titled "The Role of Game-Playing and Coping Styles in Mitigating Stress Among Students" published in The Whitman Journal of Psychology. I used Centiment for data collection and R for data analysis.',
-    tech: ['Centiment', 'R'],
+    tech: ['R'],
     github: '',
     external: 'https://www.wwjop.org/post/the-role-of-game-playing-and-coping-styles-in-mitigating-stress-among-students'
-  },
-  {
-    image: uniboundImage,
-    title: 'Unibound Consulting',
-    description: 'I am a web developer and consultant for Unibound Consulting, a startup that provides consulting services to colege applicants.',
-    tech: ['React', 'Tailwind'],
-    github: 'https://github.com/Leahie/consulting',
-    external: 'https://unibound.org'
-  },
-  {
-    image: siteImage,
-    title: 'This Site!',
-    description: 'This siteis hosted with AWS S3 and CloudFront using industry standard practices and built with React, Tailwind, and Express.',
-    tech: ['AWS', 'React', 'Tailwind'],
-    github: 'https://github.com/Hui-Peng-John-Yao/Personal-Site',
-    external: ''
   }
 ];
 

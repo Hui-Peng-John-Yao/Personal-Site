@@ -3,9 +3,7 @@ import '../../Hero.css';
 import '../../Skills.css';
 import godotLogo from '../../assets/godot_logo.png';
 import rLogo from '../../assets/r_logo.png';
-import bootstrapLogo from '../../assets/bootstrap_logo.svg';
-import postgresqlLogo from '../../assets/postgresql_logo.png';
-import reactLogo from '../../assets/react_logo.svg';
+import cppLogo from '../../assets/c++logo.svg';
 
 const skills = [
   {
@@ -40,12 +38,6 @@ const skills = [
     ),
   },
   {
-    name: 'React',
-    svg: (
-      <img src={reactLogo} alt="R Logo" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
-    ),
-  },
-  {
     name: 'Python',
     svg: (
       <svg width="80" height="80" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,21 +64,15 @@ const skills = [
     ),
   },
   {
-    name: 'Bootstrap',
-    svg: (
-      <img src={bootstrapLogo} alt="R Logo" width="80" height="80" style={{display: 'block', margin: '0 auto'}} />
-    ),
-  },
-  {
-    name: 'PostgreSQL',
-    svg: (
-      <img src={postgresqlLogo} alt="R Logo" width="80" height="80" style={{display: 'block', margin: '0 auto'}} />
-    ),
-  },
-  {
     name: 'R',
     svg: (
       <img src={rLogo} alt="R Logo" width="80" height="80" style={{display: 'block', margin: '0 auto'}} />
+    ),
+  },
+  {
+    name: 'C++',
+    svg: (
+      <img src={cppLogo} alt="C++" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
 ];

@@ -1,41 +1,41 @@
 import React from 'react';
 import '../../Hero.css';
 import '../../Skills.css';
-import googleLogo from '../../assets/google_api.png';
-import alexaLogo from '../../assets/alexa.png';
-import lambdaLogo from '../../assets/Lambda.png';
-import DynamoDBLogo from '../../assets/DynamoDB.png';
-import S3Logo from '../../assets/S3.png';
+import reactLogo from '../../assets/react_logo.svg';
+import bootstrapLogo from '../../assets/bootstrap_logo.svg';
+import nodejsLogo from '../../assets/Node.js.svg';
+import expressLogo from '../../assets/expressjs.svg';
+import tailwindLogo from '../../assets/TailwindCSSLogo.svg.png';
 
 const skills = [
   {
-    name: 'Alexa SK',
+    name: 'React',
     svg: (
-      <img src={alexaLogo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
+      <img src={reactLogo} alt="React" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
   {
-    name: 'Google API',
+    name: 'Node.js',
     svg: (
-      <img src={googleLogo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
+      <img src={nodejsLogo} alt="Node.js" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
   {
-    name: 'Lambda',
+    name: 'Express',
     svg: (
-      <img src={lambdaLogo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
+      <img src={expressLogo} alt="Express" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
   {
-    name: 'DynamoDB',
+    name: 'Bootstrap',
     svg: (
-      <img src={DynamoDBLogo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
+      <img src={bootstrapLogo} alt="Bootstrap" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
   {
-    name: 'S3',
+    name: 'Tailwind',
     svg: (
-      <img src={S3Logo} alt="AWS Logo" width="60" height="60" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
+      <img src={tailwindLogo} alt="Tailwind" width="80" height="80" style={{display: 'block', margin: '0 auto', borderRadius: '10px'}} />
     ),
   },
 ];

@@ -8,7 +8,7 @@ function ResumeDescription() {
                 My <span className="highlight">Resume</span><br />
             </h1>
             <p className="description">
-            Constantly updating...
+            Last updated: 09/04/2025
             </p>
         </div>
     );
