@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Hero.css';
-import '../../Skills.css';
+import '../.././Hero.css';
+import './Skills.css';
 import reactLogo from '../../assets/react_logo.svg';
 import bootstrapLogo from '../../assets/bootstrap_logo.svg';
 import nodejsLogo from '../../assets/Node.js.svg';

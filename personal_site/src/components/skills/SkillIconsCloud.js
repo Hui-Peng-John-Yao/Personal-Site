@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Hero.css';
-import '../../Skills.css';
+import '../.././Hero.css';
+import './Skills.css';
 import lambdaLogo from '../../assets/Lambda.png';
 import DynamoDBLogo from '../../assets/DynamoDB.png';
 import S3Logo from '../../assets/S3.png';

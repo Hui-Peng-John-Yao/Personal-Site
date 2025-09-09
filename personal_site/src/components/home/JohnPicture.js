@@ -1,6 +1,6 @@
 import React from 'react';
-import './Hero.css';
-import profilePic from './assets/John_Color.png';
+import '../.././Hero.css';
+import profilePic from '../../assets/John_Color.png';
 
 function JohnPicture() {
   return (  

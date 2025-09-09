@@ -1,13 +1,13 @@
 import React from 'react';
-import './Hero.css';
+import '../.././Hero.css';
 import './Skills.css';
-import SkillsDescription from './components/skills/SkillsDescription.js';
-import SkillIconsProficent from './components/skills/SkillIconsProficent.js';
-import Title from './components/Title.js';
-import SkillIconsPracticing from './components/skills/SkillIconsPracticing.js';
-import SkillIconsCloud from './components/skills/SkillIconsCloud.js';
-import SkillIconsTech from './components/skills/SkillIconsTech.js';
-import Header from './components/Header.js';
+import SkillsDescription from './SkillsDescription.js';
+import SkillIconsProficent from './SkillIconsProficent.js';
+import Title from '../Title.js';
+import SkillIconsPracticing from './SkillIconsPracticing.js';
+import SkillIconsCloud from './SkillIconsCloud.js';
+import SkillIconsTech from './SkillIconsTech.js';
+import Header from '../Header.js';
 
 function Skills() {
   return (

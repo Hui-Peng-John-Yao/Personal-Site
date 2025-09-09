@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css'; // Create this file for styles
+import '../.././Hero.css';   
 import HomeDescription from './HomeDescription';
 import JohnPicture from './JohnPicture';
 

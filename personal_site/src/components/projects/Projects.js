@@ -1,14 +1,14 @@
 import React from 'react';
-import './Hero.css';
+import '../.././Hero.css';
 import './Projects.css';
 import ProjectSection from './ProjectSection.js';
 import ProjectsDescription from './ProjectsDescription.js';
-import Header from './components/Header.js';
-import alexaImage from './assets/alexa.jpg';
-import arcaneChessImage from './assets/Arcane_Chess.png';
-import researchImage from './assets/Research_Image.png';
-import uniboundImage from './assets/unibound.png';
-import siteImage from './assets/site.png';
+import Header from '../Header.js';
+import alexaImage from '../../assets/alexa.jpg';
+import arcaneChessImage from '../../assets/Arcane_Chess.png';
+import researchImage from '../../assets/Research_Image.png';
+import uniboundImage from '../../assets/unibound.png';
+import siteImage from '../../assets/site.png';
 
 const projects = [
   {

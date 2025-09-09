@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import Resume from './Resume';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
+import Home from './components/home/Home';
+import Resume from './components/resume/Resume';
+import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (

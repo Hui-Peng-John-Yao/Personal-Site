@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
-import ResumeBody from './components/resume/ResumeBody';
+import Header from '../Header';
+import ResumeBody from './ResumeBody';
 
 
 function Resume() {

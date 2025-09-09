@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Hero.css';
-import '../../Skills.css';
+import '../.././Hero.css';
+import './Skills.css';
 import godotLogo from '../../assets/godot_logo.png';
 import rLogo from '../../assets/r_logo.png';
 import cppLogo from '../../assets/cpp-logo.svg';

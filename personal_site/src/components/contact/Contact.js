@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
-import './Hero.css';
-import Header from './components/Header.js';
+import '../.././Hero.css';
+import Header from '../Header.js';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -38,7 +38,7 @@ function Contact() {
           message: formData.message,
           to_name: 'John Yao', // Your name
         },
-        'nmDLRBjDn3pHh7i6k' // EmailJS public key
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // EmailJS public key from environment
       );
 
       console.log('Email sent successfully:', result);

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Hero.css';
-import '../../Skills.css';
+import '../.././Hero.css';
+import './Skills.css';
 import googleLogo from '../../assets/google_api.png';
 import alexaLogo from '../../assets/alexa.png';
 import gitLogo from '../../assets/Giticon.svg.png';

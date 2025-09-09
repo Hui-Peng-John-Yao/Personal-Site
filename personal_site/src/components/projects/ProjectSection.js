@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectSection.css';
-import { getSkillIcon } from './components/skills/SkillIconHelper';
+import { getSkillIcon } from '../skills/SkillIconHelper';
 
 const GitHubLogo = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
