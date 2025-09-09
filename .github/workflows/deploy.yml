@@ -19,9 +19,20 @@ jobs:
             node-version: 20
             cache: 'npm'
 
+        - name: Debug environment
+          run: |
+            pwd
+            ls -la
+            echo "Node version: $(node --version)"
+            echo "NPM version: $(npm --version)"
+
         - name: Install dependencies
           run: |
+            rm -rf node_modules package-lock.json
             npm install
+            echo "Checking enhanced-resolve installation:"
+            ls -la node_modules/enhanced-resolve/ || echo "enhanced-resolve not found"
+            ls -la node_modules/enhanced-resolve/util/ || echo "enhanced-resolve/util not found"
   
         - name: Build React app
           run: npm run build
