@@ -20,11 +20,9 @@ jobs:
   
         - name: Install dependencies
           run: npm install
-          working-directory: personal_site
   
         - name: Build React app
           run: npm run build
-          working-directory: personal_site
   
         - name: Sync to S3
           run: aws s3 sync personal_site/build/ s3://${{ secrets.BUCKET_NAME }} --delete
@@ -40,3 +38,4 @@ jobs:
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             AWS_REGION: ${{ secrets.AWS_REGION }}
             DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+
