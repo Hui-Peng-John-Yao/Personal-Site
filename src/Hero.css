@@ -119,6 +119,27 @@
     display: block;
   }
 
+  .projects-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #FFD100;
+    color: #2874AE;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: 'DM Sans';
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+  }
+
+  .projects-button:hover {
+    background-color: #FFE066;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
   /* Mobile responsive styles */
   @media (max-width: 768px) {
     .hero-section {
@@ -151,6 +172,12 @@
       font-size: 1rem;
       text-align: center;
       margin-bottom: 24px;
+    }
+
+    .projects-button {
+      display: block;
+      margin: 24px auto 0;
+      text-align: center;
     }
     
     .profile-img {
