@@ -8,16 +8,23 @@ const GitHubLogo = () => (
   </svg>
 );
 
-function ProjectSection({ image, title, description, tech, github, external }) {
-  const isCenteredTitle = title === 'Personal Website' || title === 'Arcane Chess';
+function ProjectSection({ image, images, title, description, tech, github, external }) {
+  const isCenteredTitle = title === 'Personal Website' || title === 'Arcane Chess' || title === 'Fit 4 You';
+  const displayImages = images || (image ? [image] : []);
   
   return (
     <div className="project-section">
-      <img src={image} alt={title + ' screenshot'} className="project-screenshot" />
+      <div className="project-screenshots">
+        {displayImages.map((img, idx) => (
+          <img key={idx} src={img} alt={title + ' screenshot ' + (idx + 1)} className="project-screenshot" />
+        ))}
+      </div>
       <div className={`project-info ${isCenteredTitle ? 'centered-info' : ''}`}>
         <h1 className={`project-title ${isCenteredTitle ? 'centered-title' : ''}`}>{title}</h1>
         <div className="project-description-box">
-          <p>{description}</p>
+          {description.split('\n\n').map((paragraph, idx) => (
+            <p key={idx}>{paragraph}</p>
+          ))}
         </div>
         <div className="project-tech-links">
           <div className="project-links">

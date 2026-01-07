@@ -3,6 +3,10 @@ import emailjs from '@emailjs/browser';
 import './Contact.css';
 import '../.././Hero.css';
 import Header from '../Header.js';
+import githubIcon from '../../assets/github-icon.svg';
+import linkedinIcon from '../../assets/linkedin-icon.svg';
+import locationIcon from '../../assets/location-icon.svg';
+import mailIcon from '../../assets/mail-icon.svg';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -65,21 +69,20 @@ function Contact() {
           <div className="contact-info">
             <h2>Contact Information</h2>
             <div className="contact-item">
-              <span className="contact-icon">📧</span>
+              <span className="contact-icon">
+                <img src={githubIcon} alt="GitHub" style={{ filter: 'brightness(0) invert(1)' }} />
+              </span>
               <div>
-                <h3>Email</h3>
-                <p>huipengjohnyao@gmail.com</p>
+                <h3>GitHub</h3>
+                <a href="https://github.com/hui-peng-john-yao" target="_blank" rel="noopener noreferrer">
+                https://github.com/hui-peng-john-yao
+                </a>
               </div>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📍</span>
-              <div>
-                <h3>Location</h3>
-                <p>Ladera Ranch, CA</p>
-              </div>
-            </div>
-            <div className="contact-item">
-              <span className="contact-icon">💼</span>
+              <span className="contact-icon">
+                <img src={linkedinIcon} alt="LinkedIn" style={{ filter: 'brightness(0) invert(1)' }} />
+              </span>
               <div>
                 <h3>LinkedIn</h3>
                 <a href="https://linkedin.com/in/john-yao" target="_blank" rel="noopener noreferrer">
@@ -88,12 +91,21 @@ function Contact() {
               </div>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">🐙</span>
+              <span className="contact-icon">
+                <img src={locationIcon} alt="Location" style={{ filter: 'brightness(0) invert(1)' }} />
+              </span>
               <div>
-                <h3>GitHub</h3>
-                <a href="https://github.com/hui-peng-john-yao" target="_blank" rel="noopener noreferrer">
-                https://github.com/hui-peng-john-yao
-                </a>
+                <h3>Location</h3>
+                <p>Ladera Ranch, CA</p>
+              </div>
+            </div>
+            <div className="contact-item">
+              <span className="contact-icon">
+                <img src={mailIcon} alt="Email" style={{ filter: 'brightness(0) invert(1)' }} />
+              </span>
+              <div>
+                <h3>Email</h3>
+                <p>huipengjohnyao@gmail.com</p>
               </div>
             </div>
           </div>

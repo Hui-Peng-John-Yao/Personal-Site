@@ -5,7 +5,7 @@ function ResumeViewer() {
   return (
     <div className="hero-right resume-viewer-container">
       <iframe
-        src="/John_Yao_Resume.pdf#zoom=100%"
+        src="/John_Yao_Resume.pdf#zoom=77%"
         style={{ border: "none" }} 
         title="My PDF Document"
         className="resume-iframe"

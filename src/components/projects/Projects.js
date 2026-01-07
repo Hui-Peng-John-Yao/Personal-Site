@@ -9,8 +9,17 @@ import arcaneChessImage from '../../assets/Arcane_Chess.png';
 import researchImage from '../../assets/Research_Image.png';
 import uniboundImage from '../../assets/unibound.png';
 import siteImage from '../../assets/site.png';
+import fit4youImage from '../../assets/fit4you.png';
 
 const projects = [
+  {
+    image: fit4youImage,
+    title: 'Fit 4 You',
+    description: "I'm leading a team of five developers to create a general purpose fitness app with AI image scanning for calorie counting and AI workout plan generation.\n\nI set up a backend using AWS Lambda for serverless functions and DynamoDB for user data. Calorie tracking data is stored in Algolia for fast semantic and word match searching. Flowise is connected with CORS to enable AI generation with multiple chatbots.",
+    tech: ['AWS Lambda', 'Node.js', 'DynamoDB', 'React'],
+    github: '',
+    external: ''
+  },
   {
     image: alexaImage,
     title: 'Alexa-Powered Voice Journal Assistant',
