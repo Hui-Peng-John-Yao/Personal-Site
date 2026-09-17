@@ -5,19 +5,21 @@
     justify-content: space-between;
     background: #2874AE;
     color: #fff;
-    padding: 60px 80px;
+    padding: 3.75rem clamp(1.25rem, 5vw, 5rem);
     min-height: 100px;
-    min-width: 100vw;
+    width: 100%;
+    max-width: 100rem;
     box-sizing: border-box;
 }
 
 .projects{
     background: #2874AE;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 clamp(1.25rem, 4vw, 4rem) 3rem;
 }

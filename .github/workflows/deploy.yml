@@ -27,12 +27,7 @@ jobs:
             echo "NPM version: $(npm --version)"
 
         - name: Install dependencies
-          run: |
-            rm -rf node_modules package-lock.json
-            npm install
-            echo "Checking enhanced-resolve installation:"
-            ls -la node_modules/enhanced-resolve/ || echo "enhanced-resolve not found"
-            ls -la node_modules/enhanced-resolve/util/ || echo "enhanced-resolve/util not found"
+          run: npm ci
   
         - name: Build React app
           run: npm run build

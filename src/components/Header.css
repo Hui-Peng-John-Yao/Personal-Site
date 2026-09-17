@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: space-between;
     background: #2874AE;
-    padding: 0 20px;
-    height: 60px;
+    padding: 0 clamp(1.25rem, 4vw, 5rem);
+    height: 3.75rem;
+    width: 100%;
     color: #fff;
     position: relative;
   }

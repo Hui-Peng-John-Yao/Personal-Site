@@ -23,10 +23,22 @@ code {
   box-sizing: border-box;
 }
 
+html {
+  /* Stay 16px through typical laptop widths, then scale up on large monitors. */
+  font-size: 16px;
+}
+
 html, body {
   overflow-x: hidden;
   width: 100%;
   overscroll-behavior: none; /* Prevent overscroll bounce on both axes */
+}
+
+@media (min-width: 1440px) {
+  html {
+    /* 16px at 1440px → 22px at 2560px+ */
+    font-size: clamp(16px, 0.625vw + 7px, 22px);
+  }
 }
 
 /* Ensure images are responsive */
