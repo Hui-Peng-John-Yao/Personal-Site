@@ -14,7 +14,7 @@ import fit4youImage from '../../assets/fit4you.png';
 const projects = [
   {
     image: fit4youImage,
-    title: 'Fit 4 You',
+    title: 'Fitica',
     description: "I'm leading a team of six developers to create a general purpose fitness app with AI image scanning for calorie counting and AI workout plan generation.\n\nI set up a backend using AWS Lambda for serverless functions and DynamoDB for user data. Calorie tracking data is stored in Algolia for fast semantic and word match searching. Flowise is connected with CORS to enable AI generation with multiple chatbots.",
     tech: ['AWS Lambda', 'Node.js', 'DynamoDB', 'React'],
     github: '',

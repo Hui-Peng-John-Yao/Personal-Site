@@ -8,7 +8,7 @@ function ResumeDescription() {
                 My <span className="highlight">Resume</span><br />
             </h1>
             <p className="description">
-            Last updated: 1/6/2026
+            Last updated: 9/10/2026
             </p>
         </div>
     );

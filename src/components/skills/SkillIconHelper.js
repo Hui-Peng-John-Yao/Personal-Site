@@ -13,6 +13,7 @@ import googleLogo from '../../assets/google_api.png';
 import alexaLogo from '../../assets/alexa.png';
 import gitLogo from '../../assets/Giticon.svg.png';
 import cppLogo from '../../assets/cpp-logo.svg';
+import postgresqlLogo from '../../assets/postgresql_logo.png';
 
 // Map of tech names to their corresponding skill icons
 const skillIconMap = {
@@ -22,6 +23,12 @@ const skillIconMap = {
       <rect width="128" height="128" rx="16" fill="#306998"/>
       <path d="M64 24c-11.046 0-20 8.954-20 20v12h40V44c0-11.046-8.954-20-20-20zm-8 12a4 4 0 110 8 4 4 0 010-8z" fill="#FFD43B"/>
       <path d="M64 104c11.046 0 20-8.954 20-20V72H44v12c0 11.046 8.954 20 20 20zm8-12a4 4 0 110-8 4 4 0 010 8z" fill="#FFE873"/>
+    </svg>
+  ),
+  'Javascript': (
+    <svg width="40" height="40" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="16" fill="#F7DF1E"/>
+      <path d="M89.6 104.2c1.8 2.9 4.2 5.1 8.4 5.1 3.5 0 5.7-1.7 5.7-4.1 0-2.8-2.2-3.8-6-5.4l-2.1-.9c-6-2.6-10-5.8-10-12.7 0-6.3 4.8-11.1 12.2-11.1 5.3 0 9.1 1.8 11.8 6.6l-6.5 4.2c-1.4-2.5-2.9-3.5-5.3-3.5-2.4 0-4 1.5-4 3.5 0 2.4 1.5 3.4 5 4.9l2.1.9c7.1 3 11.1 6.1 11.1 13.1 0 7.5-5.9 11.6-13.8 11.6-7.7 0-12.7-3.7-15.1-8.5zm-36.2.7c1.3 2.3 2.5 4.2 5.3 4.2 2.7 0 4.4-1.1 4.4-5.3V72.2h8.2v31.7c0 8.5-5 12.4-12.3 12.4-6.6 0-10.5-3.4-12.5-7.5z" fill="#000"/>
     </svg>
   ),
   'R': (
@@ -60,6 +67,15 @@ const skillIconMap = {
   ),
   'AWS S3': (
     <img src={S3Logo} alt="AWS S3" width="40" height="40" style={{display: 'block', margin: '0 auto', borderRadius: '5px'}} />
+  ),
+  'PostgreSQL': (
+    <img src={postgresqlLogo} alt="PostgreSQL" width="40" height="40" style={{display: 'block', margin: '0 auto', borderRadius: '5px'}} />
+  ),
+  'Docker': (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="5" fill="#2496ED"/>
+      <path fill="#fff" d="M20.6 11.4h-2.5v2.4h2.5V11.4zm3.1 0h-2.5v2.4H23.7V11.4zm-6.2 0H14.9v2.4h2.6V11.4zm-3.1 2.9H11.8v2.4h2.6v-2.4zm3.1 0H14.9v2.4h2.6v-2.4zm3.1 0h-2.5v2.4h2.5v-2.4zm3.1 0h-2.5v2.4H23.7v-2.4zm3.2 0h-2.6v2.4h2.6v-2.4zm-12.5 2.9H11.8v2.4h2.6v-2.4zm3.1 0H14.9v2.4h2.6v-2.4zm3.1 0h-2.5v2.4h2.5v-2.4zm3.1 0h-2.5v2.4H23.7v-2.4zm3.2 0h-2.6v2.4h2.6v-2.4zm3.1 0h-2.5v2.4h2.5v-2.4zM10.4 20.1c-.3 1.6.1 3.4.9 4.7 1.6 2.5 4.3 3.4 7.4 3.4 6.3 0 11.1-2.9 13.4-8.1.3-.6.4-1.2.5-1.8-2.9.6-6.5.3-8.6-1.2-1.4-.9-2.4-2.3-2.8-3.9-2.2.1-4.4.8-6.1 2.2-1.6 1.3-2.8 3-3.6 4.9-.3-.1-.7-.1-1.1-.2z"/>
+    </svg>
   ),
   'Cloudfront': (
     <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
