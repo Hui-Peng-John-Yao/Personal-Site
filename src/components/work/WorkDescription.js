@@ -5,7 +5,7 @@ function WorkDescription() {
     return (
         <div className="projects-description">
             <h1>
-                My <span className="highlight">Work</span><br />
+                My <span className="highlight">Professional Experience</span><br />
             </h1>
         </div>
     );

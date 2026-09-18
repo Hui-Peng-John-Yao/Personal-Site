@@ -14,6 +14,7 @@ import alexaLogo from '../../assets/alexa.png';
 import gitLogo from '../../assets/Giticon.svg.png';
 import cppLogo from '../../assets/cpp-logo.svg';
 import postgresqlLogo from '../../assets/postgresql_logo.png';
+import sqlLogo from '../../assets/sql-database-generic.svg';
 
 // Map of tech names to their corresponding skill icons
 const skillIconMap = {
@@ -40,6 +41,12 @@ const skillIconMap = {
   'C++': (
     <img src={cppLogo} alt="C++" width="40" height="40" style={{display: 'block', margin: '0 auto', borderRadius: '5px'}} />
   ),
+  'Kotlin': (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="5" fill="#7F52FF"/>
+      <path d="M8 8h12.6L8 20.2V8zm0 24V22.3L19.4 32H8zm13.1-24L8 21.5 21.1 32H32L18.6 20 32 8H21.1z" fill="#fff"/>
+    </svg>
+  ),
   
   // Frameworks & Libraries
   'React': (
@@ -57,6 +64,22 @@ const skillIconMap = {
   'Bootstrap': (
     <img src={bootstrapLogo} alt="Bootstrap" width="40" height="40" style={{display: 'block', margin: '0 auto', borderRadius: '5px'}} />
   ),
+  'Vue.js': (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="5" fill="#fff"/>
+      <path d="M24.4 8H32L20 32 8 8h7.6L20 15.6 24.4 8z" fill="#41B883"/>
+      <path d="M15.6 8H8L20 32 32 8h-7.6L20 15.6 15.6 8z" fill="#41B883"/>
+      <path d="M12.4 8h5.2L20 12.8 22.4 8h5.2L20 22.4 12.4 8z" fill="#35495E"/>
+    </svg>
+  ),
+  'YOLO': (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="5" fill="#111827"/>
+      <circle cx="20" cy="20" r="10" stroke="#A3E635" strokeWidth="2.5"/>
+      <circle cx="20" cy="20" r="4" fill="#A3E635"/>
+      <path d="M20 6v4M20 30v4M6 20h4M30 20h4" stroke="#A3E635" strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+  ),
   
   // Cloud & Databases
   'AWS Lambda': (
@@ -70,6 +93,9 @@ const skillIconMap = {
   ),
   'PostgreSQL': (
     <img src={postgresqlLogo} alt="PostgreSQL" width="40" height="40" style={{display: 'block', margin: '0 auto', borderRadius: '5px'}} />
+  ),
+  'SQL': (
+    <img src={sqlLogo} alt="SQL" width="40" height="40" style={{display: 'block', margin: '0 auto', borderRadius: '5px'}} />
   ),
   'Docker': (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,6 +158,19 @@ const skillIconMap = {
   ),
   'Godot': (
     <img src={godotLogo} alt="Godot" width="40" height="40" style={{display: 'block', margin: '0 auto'}} />
+  ),
+  'Cloudflare': (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="5" fill="#F38020"/>
+      <path d="M12.5 27.5h16.2c2.6 0 4.8-2 5.1-4.6.3-2.8-1.8-5.2-4.6-5.2-.3 0-.6 0-.9.1C27.7 14.6 25 12.5 21.8 12.5c-2.8 0-5.2 1.8-6.1 4.4-1-.7-2.2-1.1-3.5-1.1-3.2 0-5.8 2.6-5.8 5.8 0 3.2 2.6 5.9 5.8 5.9h.3z" fill="#fff"/>
+    </svg>
+  ),
+  'ElevenLabs': (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="5" fill="#000"/>
+      <rect x="13" y="10" width="5" height="20" rx="1" fill="#fff"/>
+      <rect x="22" y="10" width="5" height="20" rx="1" fill="#fff"/>
+    </svg>
   ),
 };
 

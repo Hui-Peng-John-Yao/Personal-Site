@@ -19,7 +19,7 @@ const work = [
     image: dataformaImage,
     title: 'Dataforma',
     description: 'I work as a software developer at Dataforma, a field management software for roofing companies. My job is to create widgets that display critical business information to customers.',
-    tech: [],
+    tech: ['Vue.js', 'Kotlin', 'SQL', 'Docker', 'AWS S3'],
     github: '',
     external: ''
   }

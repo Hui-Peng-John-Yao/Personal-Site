@@ -9,7 +9,7 @@ const GitHubLogo = () => (
 );
 
 function ProjectSection({ image, images, title, description, tech, github, external }) {
-  const isCenteredTitle = title === 'Personal Website' || title === 'Arcane Chess' || title === 'Fitica' || title === 'WOOOLY' || title === 'Dataforma';
+  const isCenteredTitle = title === 'Personal Website' || title === 'Arcane Chess' || title === 'Fitica' || title === 'WOOOLY' || title === 'Dataforma' || title === 'A-Eye';
   const displayImages = images || (image ? [image] : []);
   
   return (
