@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
-import profilePic from '../assets/John_Color.png';
+import profilePic from '../assets/John_Avatar.webp';
 import Nav from './Nav';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -12,24 +18,30 @@ function Header() {
 
   return (
     <header className="custom-header">
-      <div className="header-left">
-        <img src={profilePic} alt="Profile" className="profile-pic" />
+      <Link to="/" className="header-left">
+        <img src={profilePic} alt="John Yao" className="profile-pic" />
         <span className="site-name">John Yao</span>
-      </div>
-      
-      {/* Desktop Navigation */}
+      </Link>
+
       <Nav />
-      
-      {/* Mobile Menu Button */}
-      <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+
+      <button
+        className="mobile-menu-btn"
+        onClick={toggleMobileMenu}
+        aria-label="Open navigation"
+        aria-expanded={isMobileMenuOpen}
+      >
         ☰
       </button>
-      
-      {/* Mobile Navigation Overlay */}
+
       {isMobileMenuOpen && (
         <div className="mobile-nav-overlay">
           <div className="mobile-nav-content">
-            <button className="mobile-close-btn" onClick={toggleMobileMenu}>
+            <button
+              className="mobile-close-btn"
+              onClick={toggleMobileMenu}
+              aria-label="Close navigation"
+            >
               ✕
             </button>
             <Nav />

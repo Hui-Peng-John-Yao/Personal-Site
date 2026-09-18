@@ -3,7 +3,6 @@ import '../.././Hero.css';
 import './Projects.css';
 import ProjectSection from './ProjectSection.js';
 import ProjectsDescription from './ProjectsDescription.js';
-import Header from '../Header.js';
 import alexaImage from '../../assets/alexa.jpg';
 import arcaneChessImage from '../../assets/Arcane_Chess.png';
 import researchImage from '../../assets/Research_Image.png';
@@ -73,14 +72,11 @@ const projects = [
 
 function Projects() {
   return (
-    <div>
-      <Header />
     <div className="projects">
       <ProjectsDescription />
       {projects.map((project, idx) => (
         <ProjectSection key={idx} {...project} />
       ))}
-    </div>
     </div>
   );
 }

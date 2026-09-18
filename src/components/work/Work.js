@@ -2,7 +2,6 @@ import React from 'react';
 import '../projects/Projects.css';
 import ProjectSection from '../projects/ProjectSection.js';
 import WorkDescription from './WorkDescription.js';
-import Header from '../Header.js';
 import wooolyImage from '../../assets/woooly.png';
 import dataformaImage from '../../assets/dataforma.png';
 
@@ -27,14 +26,11 @@ const work = [
 
 function Work() {
   return (
-    <div>
-      <Header />
-      <div className="projects">
-        <WorkDescription />
-        {work.map((item, idx) => (
-          <ProjectSection key={idx} {...item} />
-        ))}
-      </div>
+    <div className="projects">
+      <WorkDescription />
+      {work.map((item, idx) => (
+        <ProjectSection key={idx} {...item} />
+      ))}
     </div>
   );
 }

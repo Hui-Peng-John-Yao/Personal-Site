@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
-    return (
-        <nav className="header-nav">
-          <Link to="/">Home</Link>
-          <Link to="/resume">Resume</Link>
-          <Link to="/skills">Skills</Link>
-          <Link to="/work">Professional</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-    );
+  return (
+    <nav className="header-nav">
+      <NavLink to="/" end>Home</NavLink>
+      <NavLink to="/resume">Resume</NavLink>
+      <NavLink to="/skills">Skills</NavLink>
+      <NavLink to="/work">Professional</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+    </nav>
+  );
 }
 
 export default Nav;

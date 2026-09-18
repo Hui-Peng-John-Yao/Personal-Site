@@ -1,16 +1,46 @@
 @import "tailwindcss";
 @import '@fontsource/dm-sans';
 
+:root {
+  --blue: #2874AE;
+  --gold: #FFD100;
+  --gold-card: #FFC72C;
+  --gold-shadow: #bba212;
+  --cream: #f8f8d8;
+  --ink: #111111;
+  --navy: #0f3a5c;
+  --white: #ffffff;
+  --shadow: 6px 8px 0 0 var(--navy);
+  --shadow-sm: 4px 6px 0 0 var(--navy);
+  --radius: 12px;
+  --header-height: 3.75rem;
+  --footer-height: 4.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  overscroll-behavior: none;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #2874AE; /* Match your site's primary color */
-  overscroll-behavior: none; /* Prevent overscroll bounce */
+  color: var(--white);
+  background-color: var(--blue);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1.15px, transparent 1.15px);
+  background-size: 22px 22px;
+  overscroll-behavior: none;
 }
 
 code {
@@ -18,57 +48,87 @@ code {
     monospace;
 }
 
-/* Global mobile responsive styles */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  /* Stay 16px through typical laptop widths, then scale up on large monitors. */
-  font-size: 16px;
-}
-
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  overscroll-behavior: none; /* Prevent overscroll bounce on both axes */
-}
-
-@media (min-width: 1440px) {
-  html {
-    /* 16px at 1440px → 22px at 2560px+ */
-    font-size: clamp(16px, 0.625vw + 7px, 22px);
-  }
-}
-
-/* Ensure images are responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Mobile-first responsive utilities */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 15px;
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.page-title {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--white);
+}
+
+.page-subtitle {
+  color: var(--white);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  max-width: 40rem;
+  margin: 0.85rem auto 0;
+  font-weight: 500;
+}
+
+.highlight {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.brutal-btn,
+.projects-button,
+.submit-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--gold);
+  color: var(--navy);
+  border: 3px solid var(--navy);
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  font-family: inherit;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.brutal-btn:hover,
+.projects-button:hover,
+.submit-btn:hover:not(:disabled) {
+  background: #ffe566;
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow);
+}
+
+.brutal-btn:active,
+.projects-button:active,
+.submit-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 3px 0 0 var(--navy);
+}
+
+.submit-btn:disabled {
+  background: #d9d3a8;
+  color: #5c5c5c;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: clamp(16px, 0.625vw + 7px, 22px);
   }
-  
-  /* Prevent horizontal scrolling on mobile */
+}
+
+@media (max-width: 768px) {
   body {
     overflow-x: hidden;
-  }
-}
-
-/* Tablet and up */
-@media (min-width: 769px) {
-  .container {
-    padding: 0 40px;
-  }
-}
-
-/* Desktop and up */
-@media (min-width: 1024px) {
-  .container {
-    padding: 0 80px;
   }
 }

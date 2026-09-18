@@ -1,81 +1,64 @@
 .contact-page {
-  background: #2874AE;
-  min-height: 100vh;
+  background: transparent;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 1.75rem 0 3rem;
+  text-align: left;
 }
 
-.contact-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #2874AE;
-  color: #fff;
-  padding: 60px 80px;
-  min-height: 100px;
-  width: 100%;
-  box-sizing: border-box;
+.contact-page > h1 {
   text-align: center;
-  font-family: 'DM Sans';
+  color: var(--white);
+  margin-bottom: 0.35rem;
 }
 
-.contact-description .title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-family: 'DM Sans';
+.contact-page > p {
   text-align: center;
-  color: #fff;
-}
-
-.contact-description .title .highlight {
-  color: #FFD100;
-  font-weight: bold;
-}
-
-.contact-description p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  line-height: 1.6;
-  font-family: 'DM Sans';
+  color: var(--white);
+  font-size: 1.15rem;
+  max-width: 36rem;
+  line-height: 1.65;
+  margin: 0.75rem 1.5rem 0;
 }
 
 .contact-content {
   display: flex;
   max-width: 75rem;
   width: 100%;
-  gap: 60px;
-  padding: 60px 40px;
+  gap: 48px;
+  padding: 48px 40px;
   box-sizing: border-box;
 }
 
-.contact-info {
+.contact-info,
+.contact-form {
   flex: 1;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--cream);
+  color: var(--navy);
   padding: 40px;
-  border-radius: 12px;
-  color: #fff;
+  border-radius: var(--radius);
+  border: 3px solid var(--navy);
+  box-shadow: var(--shadow);
 }
 
-.contact-info h2 {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-family: 'DM Sans';
+.contact-info h2,
+.contact-form h2 {
+  font-size: 1.6rem;
+  margin-bottom: 28px;
+  font-weight: 800;
+  color: var(--navy);
 }
 
 .contact-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   gap: 15px;
-  font-family: 'DM Sans';
 }
 
 .contact-icon {
@@ -84,49 +67,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  height: 24px;
+  min-width: 40px;
+  height: 40px;
+  background: var(--gold);
+  border: 2px solid var(--navy);
+  border-radius: 8px;
+  box-shadow: 2px 3px 0 0 var(--navy);
 }
 
 .contact-icon img {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
 .contact-item h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-bottom: 5px;
-  font-weight: bold;
-  font-family: 'DM Sans';
+  font-weight: 800;
+  color: var(--navy);
 }
 
 .contact-item p,
 .contact-item a {
-  color: #fff;
+  color: var(--navy);
   text-decoration: none;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: 'DM Sans';
+  word-break: break-word;
 }
 
 .contact-item a:hover {
   text-decoration: underline;
-}
-
-.contact-form {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 12px;
-  color: #fff;
-}
-
-.contact-form h2 {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-family: 'DM Sans';
+  text-underline-offset: 3px;
 }
 
 .form-group {
@@ -136,37 +109,34 @@
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1rem;
-  font-family: 'DM Sans';
+  color: var(--navy);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 12px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 3px solid var(--navy);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--white);
+  color: var(--navy);
   font-size: 1rem;
   box-sizing: border-box;
-  transition: border-color 0.3s;
-  font-family: 'DM Sans';
+  transition: box-shadow 0.15s ease;
+  font-family: inherit;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'DM Sans';
+  color: #6b7280;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #FFD100;
-  background: rgba(255, 255, 255, 0.15);
-  font-family: 'DM Sans';
+  box-shadow: 3px 4px 0 0 var(--navy);
 }
 
 .form-group textarea {
@@ -175,78 +145,40 @@
 }
 
 .submit-btn {
-  background: #FFD100;
-  color: #2874AE;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
   width: 100%;
   margin-top: 10px;
-  font-family: 'DM Sans';
 }
 
-.submit-btn:hover {
-  background: #bd9b07;
-}
-
-.submit-btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+.success-message,
+.error-message {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  border: 3px solid;
 }
 
 .success-message {
-  background: rgba(76, 175, 80, 0.2);
-  border: 2px solid #4CAF50;
-  color: #4CAF50;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-family: 'DM Sans';
+  background: #e8f7ea;
+  border-color: #1f7a32;
+  color: #1f7a32;
 }
 
 .error-message {
-  background: rgba(244, 67, 54, 0.2);
-  border: 2px solid #F44336;
-  color: #F44336;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-family: 'DM Sans';
+  background: #fdecea;
+  border-color: #b42318;
+  color: #b42318;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
-    gap: 40px;
-    padding: 40px 20px;
+    gap: 32px;
+    padding: 32px 20px;
   }
-  
-  .contact-description {
-    padding: 40px 20px;
-  }
-  
-  .contact-description h1 {
-    font-size: 2rem;
-  }
-  
+
   .contact-info,
   .contact-form {
-    padding: 30px 20px;
+    padding: 28px 20px;
   }
-}
-
-/* Override App.css text-align center for contact page */
-.contact-page {
-  text-align: left;
-}
-
-.contact-description {
-  text-align: center;
 }

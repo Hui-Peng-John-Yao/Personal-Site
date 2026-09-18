@@ -4,12 +4,13 @@ import '../../Hero.css';
 function ResumeViewer() {
   return (
     <div className="hero-right resume-viewer-container">
-      <iframe
-        src="/John_Yao_Resume.pdf#zoom=77%"
-        style={{ border: "none" }} 
-        title="My PDF Document"
-        className="resume-iframe"
-      />
+      <div className="resume-card">
+        <iframe
+          src="/John_Yao_Resume.pdf#zoom=77%"
+          title="John Yao resume"
+          className="resume-iframe"
+        />
+      </div>
     </div>
   );
 }

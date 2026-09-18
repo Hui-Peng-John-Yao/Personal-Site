@@ -1,13 +1,13 @@
 import React from 'react';
-import '../.././Hero.css';
-import profilePic from '../../assets/John_Color.png';
+import '../../Hero.css';
+import profilePic from '../../assets/John_Color.webp';
 
 function JohnPicture() {
-  return (  
+  return (
     <div className="hero-right">
-        <div className="profile-img-container">
-          <img src={profilePic} alt="John Yao" className="profile-img" />
-        </div>
+      <div className="profile-img-container">
+        <img src={profilePic} alt="Cartoon portrait of John Yao" className="profile-img" />
+      </div>
     </div>
   );
 }
