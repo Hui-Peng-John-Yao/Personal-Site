@@ -8,7 +8,7 @@ function ProjectsDescription() {
         My <span className="highlight">Projects</span>
       </h1>
       <p className="page-subtitle">
-        Selected builds across AI, full-stack apps, and research.
+        Work a recruiter can diligence: production AWS, team leadership, and an MLH-winning accessibility prototype.
       </p>
     </div>
   );

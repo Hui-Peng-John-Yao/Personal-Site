@@ -15,7 +15,7 @@ const projects = [
   {
     image: aEyeImage,
     title: 'A-Eye',
-    description: "I led a four-person team at LA Hacks 2026 to build A-Eye, prototype smart glasses that turn live camera input into spoken navigation for visually impaired users. We won MLH's Best Use of ElevenLabs.\n\nThe system uses YOLO object detection, multi-agent decision making, and ElevenLabs text-to-speech to identify obstacles, find points of interest, and give real-time audio guidance indoors and outdoors. A React client streams video over Cloudflare so users get prioritized instructions like hazard warnings and turn-by-turn directions without needing a screen.",
+    description: "I led a four-person team at LA Hacks 2026 to prototype A-Eye: smart glasses that turn a live camera feed into spoken navigation for visually impaired users. We won MLH's Best Use of ElevenLabs.\n\nThe stack is YOLO detection, multi-agent decisions, and ElevenLabs speech, with a React client streaming video over Cloudflare so users get hazard warnings and turn-by-turn audio without a screen. It is a full-stack accessibility product, not a slide-deck demo.",
     tech: ['React', 'Python', 'YOLO', 'Cloudflare', 'ElevenLabs'],
     github: 'https://github.com/AK20202007/A-Eye',
     external: 'https://devpost.com/software/a-eye-pk9sdw'
@@ -23,7 +23,7 @@ const projects = [
   {
     image: fit4youImage,
     title: 'Fitica',
-    description: "I'm leading a team of six developers to create a general purpose fitness app with AI image scanning for calorie counting and AI workout plan generation.\n\nI set up a backend using AWS Lambda for serverless functions and DynamoDB for user data. Calorie tracking data is stored in Algolia for fast semantic and word match searching. Flowise is connected with CORS to enable AI generation with multiple chatbots.",
+    description: "I lead a team of six building Fitica, a fitness app that uses AI to scan meals for calories and generate workout plans — consumer product work that requires a roadmap, not just a feature ticket.\n\nI designed the serverless backend on AWS Lambda and DynamoDB, indexed food logs in Algolia for fast search, and wired Flowise chatbots behind CORS so multiple AI agents can generate plans without blocking the React client.",
     tech: ['AWS Lambda', 'Node.js', 'DynamoDB', 'React'],
     github: '',
     external: ''
@@ -31,7 +31,7 @@ const projects = [
   {
     image: alexaImage,
     title: 'Alexa-Powered Voice Journal Assistant',
-    description: 'I journal my to-do list, and I ask Alexa to read it back to me the next day when I wake up.',
+    description: "I shipped a production Alexa skill that reads back my journaled to-do list every morning. The product is small; the AWS surface is not: Alexa Skills Kit, Lambda, DynamoDB, IAM, and the Google Drive API.\n\nIt is proof I can design a voice interface and glue cloud services together securely — the same pattern as any event-driven backend, just spoken out loud.",
     tech: ['Python', 'AWS Lambda', 'Google Drive API', 'DynamoDB', 'Alexa Skills Kit', 'IAM'],
     github: 'https://github.com/Hui-Peng-John-Yao/Alexa-Journal-Reader/',
     external: ''
@@ -39,7 +39,7 @@ const projects = [
   {
     image: siteImage,
     title: 'Personal Website',
-    description: 'This site is hosted with AWS S3 and CloudFront using industry standard practices and built with React, Tailwind, and Express.',
+    description: "This site is a production deploy, not a localhost screenshot: React on the front, AWS S3, CloudFront, and Route 53 on the back, hosted the way a real static product goes live.\n\nI treat it as a shipping surface — custom UI, routing, and a contact pipeline — with the same care I would give a customer-facing app.",
     tech: ['Git', 'React', 'AWS S3', 'Cloudfront', 'Route 53'],
     github: 'https://github.com/Hui-Peng-John-Yao/Personal-Site',
     external: 'https://huipengjohnyao.com'
@@ -47,7 +47,7 @@ const projects = [
   {
     image: uniboundImage,
     title: 'Unibound Consulting',
-    description: 'I am a web developer and consultant for Unibound Consulting, a startup that provides consulting services to college applicants.',
+    description: "I build and maintain the web product for Unibound Consulting, a startup that advises college applicants — real users and real stakeholders, not a class assignment.\n\nIn React, Tailwind, and Node.js I ship the site applicants and consultants actually use, balancing design with the operational needs of a small team.",
     tech: ['React', 'Tailwind', 'Node.js'],
     github: 'https://github.com/Leahie/consulting',
     external: 'https://unibound.org'
@@ -55,7 +55,7 @@ const projects = [
   {
     image: arcaneChessImage,
     title: 'Arcane Chess',
-    description: 'A game developed in GoDot that combines the classic gameplay of chess with a card and mana system.',
+    description: "Arcane Chess is a complete Godot game that layers a card-and-mana system onto chess — original rules, not a tutorial clone.\n\nI designed the systems, implemented the gameplay loop, and shipped a playable build. That is the same muscle as product engineering: constraints, state, and an experience that has to feel fair.",
     tech: ['Godot'],
     github: '',
     external: ''
@@ -63,7 +63,7 @@ const projects = [
   {
     image: researchImage,
     title: 'Published Research',
-    description: 'A paper titled "The Role of Game-Playing and Coping Styles in Mitigating Stress Among Students" published in The Whitman Journal of Psychology. I used Centiment for data collection and R for data analysis.',
+    description: "I published \"The Role of Game-Playing and Coping Styles in Mitigating Stress Among Students\" in The Whitman Journal of Psychology — a peer-facing paper, not a class write-up.\n\nI ran data collection through Centiment and analyzed results in R, which matters anytime a team needs someone who can measure an effect, not only ship a feature.",
     tech: ['R'],
     github: '',
     external: 'https://www.wwjop.org/post/the-role-of-game-playing-and-coping-styles-in-mitigating-stress-among-students'

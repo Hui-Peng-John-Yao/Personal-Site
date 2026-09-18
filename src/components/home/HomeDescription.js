@@ -24,6 +24,9 @@ function HomeDescription() {
         <Link to="/projects" className="projects-button">
           See my projects!
         </Link>
+        <Link to="/work" className="projects-button">
+          See my professional work!
+        </Link>
         <Link to="/contact" className="hero-secondary-link">
           Get in touch
         </Link>

@@ -8,7 +8,7 @@ function WorkDescription() {
         My <span className="highlight">Professional Experience</span>
       </h1>
       <p className="page-subtitle">
-        Roles where I ship product — hiring tools at WOOOLY and field software at Dataforma.
+        Production roles: AI hiring assessments at WOOOLY and B2B field software at Dataforma.
       </p>
     </div>
   );
